@@ -15,7 +15,6 @@ library(ggthemes)
 ## We also only include players whose mean RAPTOR WAR is greater than 5 and whose mean TS is greater than 50%. 
 ## Once we calculate their experience, we eliminate players with duplicate names who played long periods of time apart from each other by only including 
 ## those who have less than 22 years of experience, thereby only including those who have had continuous experience.
-## 
 nba_experience <- nba_data_historical %>%
   rename(TS = "TS%") %>%
   rename(raptorWAR = "Raptor WAR") %>%
